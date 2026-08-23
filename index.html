@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Finding Fathers — DC Biking Scavenger Hunt 2026">
+  <title>The Finding Fathers — 🚴‍♂️ DC Biking Scavenger Hunt 2026 🔎</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Kapakana:wght@300;400&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span>🚴‍♂️ DC Biking Scavenger Hunt 🔎</span>
+    </div>
+    <p class="header-title">The Finding Fathers</p>
+    <p class="event-date">Saturday <br>September 12th <br><span>noon - 5pm</span></p>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-image" role="img"></div>
+    </section>
+
+    <section class="details section" id="details">
+      <div class="details-layout">
+        <figure class="details-photo">
+          <img src="assets/mile-zero-scarred.jpg" alt="Four cyclists posing with their bikes beside the Mile Zero marker" loading="lazy">
+        </figure>
+        <div class="schedule">
+          <section class="schedule-block">
+            <header>
+              <span class="schedule-number">01</span>
+              <div><p>THE PREPARATION</p><h3>Now (before September 7th)</h3></div>
+            </header>
+            <ul>
+              <li>Assemble a team of 2–4 sleuthing cyclists.</li>
+              <li>Text Lowell one clue for each person on your team. (<a href="#recap">See past years’ clues</a>)</li>
+            </ul>
+          </section>
+
+          <section class="schedule-block">
+            <header>
+              <span class="schedule-number">02</span>
+              <div><p>THE SCAVENGER HUNT</p><h3>Saturday, September 12th</h3></div>
+            </header>
+            <ol class="timed-events">
+              <li><time datetime="2026-09-12T11:45">11:45</time><p>Meet at a central location in DC <em>(to be announced later).</em></p></li>
+              <li><time datetime="2026-09-12T11:55">11:55</time><p>Receive your clue sheet, map, and brief rules reminder.</p></li>
+              <li><time datetime="2026-09-12T12:00">12:00</time><p><strong>Go go go!</strong> Tear into your packet, start solving the clues, and set off to find them.</p></li>
+              <li><time datetime="2026-09-12T12:00">12–5</time><p>Find clues, take pictures with or at them, and text them to Lowell for confirmation.</p></li>
+              <li><time datetime="2026-09-12T17:00">5:00</time><p><strong>Kickstands down!</strong> The team that found the most clues wins <em>(to be announced later).</em></p></li>
+            </ol>
+          </section>
+
+          <section class="schedule-block">
+            <header>
+              <span class="schedule-number">03</span>
+              <div><p>THE GRILL OF RIGHTS</p><h3>Saturday evening</h3></div>
+            </header>
+            <ol class="timed-events">
+              <li><time datetime="2026-09-12T18:00">6:00</time><p>Grill out at 4415 14th St NE (<a href="https://partiful.com/e/kWNirmmfFFXSuBSvsqC3" target="_blank" rel="noopener noreferrer">RSVP on Partiful</a>)</p></li>
+              <li><time datetime="2026-09-12T19:00">7:00</time><p>Awards and crowning of the champion.</p></li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="recap section" id="recap">
+      <div class="recap-intro">
+        <h2><em>Last year's ride in review</em></h2>
+      </div>
+
+      <div class="recap-story">
+        <div class="recap-map-wrap">
+          <div id="recap-map" class="recap-map" role="img"></div>
+        </div>
+
+        <div class="story-panels">
+
+          <article class="story-panel" data-label="Logan Circle" data-lat="38.9097" data-lng="-77.0433" data-zoom="15">
+            <div class="panel-card">
+              <div class="panel-meta"><time datetime="2025-09-13T12:00">12:00 PM</time><span>LOGAN CIRCLE</span></div>
+              <h3>Game <em>on!</em></h3>  
+              <p>Teams ripped open their clue packs, started deciphering clues, and plotting courses on their maps.</p>
+            </div>
+          </article>
+
+          <article class="story-panel" data-label="Subway 🥖" data-lat="38.9171" data-lng="-77.0317" data-zoom="16">
+            <div class="panel-card">
+              <div class="panel-meta"><time datetime="2025-09-13T12:31">12:31 PM</time><span>SUBWAY</span></div>
+              <img class="panel-photo" src="assets/first-clue.jpg" alt="Team Flat Tires celebrating their first clue outside the Subway restaurant on U Street" loading="lazy">
+
+              <blockquote class="clue-verse">
+                He hurled his Subway sandwich, a messy affair,<br>
+                But felony charges? Jeanine Pirro’s failed affair.<br>
+                Think both of the “subway” you ride and you eat,<br>
+                Where justice resides, your red-line clue is complete.
+              </blockquote>
+
+              <table class="standings-table">
+                <colgroup>
+                   <col span="1" style="width: 60%;">
+                   <col span="1" style="width: 10%;">
+                   <col span="1" style="width: 20%;">
+                </colgroup>
+
+                <thead>
+                  <tr><th colspan="3">Standings</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row"><span>🎤 Flat Tires</span></th><td><span>1</span></td><td><span>|</span></td></tr>
+                  <tr><th scope="row">👯‍♀️ Bi Wife Energy</th><td>0</td><td></td></tr>
+                  <tr><th scope="row">🕵️‍♀️ Patel and Bongino</th><td>0</td><td></td></tr>
+                  <tr><th scope="row">👶 Peter &amp; Nathaniel in abscentia bicycle gang</th><td>0</td><td></td></tr>
+                  <tr><th scope="row">🐎 Ryderz</th><td>0</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="story-panel" data-label="Rock Creek Parkway" data-lat="38.9037" data-lng="-77.0580" data-zoom="15">
+            <div class="panel-card">
+              <div class="panel-meta"><time datetime="2025-09-13T13:27">1:27 PM</time><span>ROCK CREEK PKWY</span></div>
+              <h3>Pit stop</h3>
+              <p>A pedal falls clean off along Rock Creek Parkway. A multi-tool, some teamwork, and twelve greasy minutes save the day.</p>
+              <div class="panel-location"><span>⚠</span><div><small>UNPLANNED PIT STOP</small><strong>Rock Creek Parkway</strong></div></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section" id="faqs">
+      <div class="faq-heading"><p class="eyebrow"><span></span> Need to know</p><h2>Questions,<br><em>answered.</em></h2><p>Still wondering about something?</p>
+      <div class="faq-list">
+        <details class="reveal"><summary>Do I need to be a serious cyclist?<span>+</span></summary><p>Not at all. The route is designed for casual city riders and you’ll move at your team’s pace. If you can comfortably ride about 12 miles with stops, you’re set.</p></details>
+        <details class="reveal"><summary>What kind of bike should I bring?<span>+</span></summary><p>Any roadworthy bike works—including Capital Bikeshare. Check your tires and brakes beforehand, and don’t forget your helmet.</p></details>
+        <details class="reveal"><summary>What if I don’t have a team?<span>+</span></summary><p>Register solo and choose the matchmaking option. We’ll introduce you to a friendly crew before event day.</p></details>
+        <details class="reveal"><summary>Is this a race?<span>+</span></summary><p>Only if you want it to be. Points come from solved clues and creative challenges, not just speed. The best route is rarely the fastest one.</p></details>
+        <details class="reveal"><summary>What happens if it rains?<span>+</span></summary><p>A little drizzle makes the story better. We’ll ride in light rain and announce any severe-weather changes by email the day before.</p></details>
+      </div>
+    </section>
+
+    <section class="signup" id="signup">
+      <div><p class="eyebrow light"><span></span> Ready when you are</p><h2>DC is full of clues.<br><em>Go find them.</em></h2></div>
+    </section>
+  </main>
+
+  <footer class="site-header">
+    <div class="brand">
+      <span>🚴‍♂️ DC Biking Scavenger Hunt 🔎</span>
+    </div>
+    <p class="header-title">The Finding Fathers</p>
+    <p class="event-date">Saturday <br>September 12th <br><span>noon - 5pm</span></p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>
