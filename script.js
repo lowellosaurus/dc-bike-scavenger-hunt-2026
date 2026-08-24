@@ -58,14 +58,6 @@ if (storyPanels.length && mapElement && window.L) {
     locations[label] = { coordinates, marker };
   });
 
-  const routeLine = L.polyline([], {
-    color: '#df2a2a',
-    weight: 5,
-    opacity: 0.9,
-    dashArray: '3 10',
-    lineCap: 'round'
-  }).addTo(map);
-
   let activePanel = storyPanels[0];
 
   const activatePanel = (panel) => {
@@ -84,7 +76,6 @@ if (storyPanels.length && mapElement && window.L) {
     storyPanels.slice(0, panelIndex + 1).forEach((item) => {
       if (!visitedStops.includes(item.dataset.label)) visitedStops.push(item.dataset.label);
     });
-    routeLine.setLatLngs(visitedStops.map((label) => locations[label].coordinates));
 
     const destination = [Number(panel.dataset.lat), Number(panel.dataset.lng)];
     const zoom = Number(panel.dataset.zoom);
