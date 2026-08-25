@@ -671,9 +671,8 @@ footer p {
 .clue-card img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 8.5 / 11;
-  object-fit: cover;
-  object-position: top;
 }
 
 .clue-card span {
@@ -1013,10 +1012,10 @@ footer p {
 .panel-photo {
   display: block;
   width: 100%;
+  height: auto;
   margin: 25px 0 20px;
   border: 6px solid var(--paper);
   box-shadow: 6px 6px 0 var(--crimson);
-  object-fit: cover;
 }
 .clue-verse {
   margin: 22px 0 0;
