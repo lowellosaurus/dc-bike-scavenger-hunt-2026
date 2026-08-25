@@ -116,3 +116,27 @@ if (storyPanels.length && mapElement && window.L) {
 
   storyPanels.forEach((panel) => fallbackObserver.observe(panel));
 }
+
+const clueLightbox = document.querySelector('.clue-lightbox');
+const clueLightboxImage = clueLightbox?.querySelector('img');
+const clueLightboxClose = clueLightbox?.querySelector('.clue-lightbox-close');
+
+document.querySelectorAll('.clue-card').forEach((card) => {
+  card.addEventListener('click', () => {
+    if (!clueLightbox || !clueLightboxImage) return;
+    clueLightboxImage.src = card.dataset.clueSrc;
+    clueLightboxImage.alt = card.dataset.clueAlt;
+    clueLightbox.showModal();
+  });
+});
+
+clueLightboxClose?.addEventListener('click', () => clueLightbox.close());
+
+clueLightbox?.addEventListener('click', (event) => {
+  if (event.target === clueLightbox) clueLightbox.close();
+});
+
+clueLightbox?.addEventListener('close', () => {
+  clueLightboxImage.removeAttribute('src');
+  clueLightboxImage.alt = '';
+});
